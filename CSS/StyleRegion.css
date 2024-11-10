@@ -1,6 +1,20 @@
-img {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
+/* Appliquez ces styles à l'image dans votre page */
+.image-full-page {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles pour aligner le contenu */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
