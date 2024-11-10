@@ -30,5 +30,79 @@
           </div>
         </div>
     </nav>
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande de Fromages</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="bg-secondary text-white text-center py-3">
+        <h1>Commande de Fromages - La Cave de Saint-Claude</h1>
+        <p>Découvrez notre sélection de fromages affinés avec soin</p>
+    </header>
+
+    <!-- Section des fromages -->
+    <div class="container mt-5">
+        <h2 class="text-center">Nos Fromages</h2>
+        <form action="/commande" method="post" class="mt-4">
+            <div class="row">
+                <!-- Fromage Comté -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/comte.jpg" class="card-img-top" alt="Comté">
+                        <div class="card-body">
+                            <h5 class="card-title">Comté AOP</h5>
+                            <p class="card-text">Un fromage au goût de noisette, affiné pendant 24 mois.</p>
+                            <p><strong>Prix :</strong> 20 €/kg</p>
+                            <label for="comte-quantity">Quantité (en kg) :</label>
+                            <input type="number" name="comte_quantity" min="0" step="0.1" class="form-control" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fromage Morbier -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/morbier.jpg" class="card-img-top" alt="Morbier">
+                        <div class="card-body">
+                            <h5 class="card-title">Morbier</h5>
+                            <p class="card-text">Fromage doux avec une ligne de cendre, typique du Jura.</p>
+                            <p><strong>Prix :</strong> 18 €/kg</p>
+                            <label for="morbier-quantity">Quantité (en kg) :</label>
+                            <input type="number" name="morbier_quantity" min="0" step="0.1" class="form-control" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fromage Tomme -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/tomme.jpg" class="card-img-top" alt="Tomme">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomme de Savoie</h5>
+                            <p class="card-text">Un fromage de montagne, au goût doux et crémeux.</p>
+                            <p><strong>Prix :</strong> 15 €/kg</p>
+                            <label for="tomme-quantity">Quantité (en kg) :</label>
+                            <input type="number" name="tomme_quantity" min="0" step="0.1" class="form-control" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bouton de validation de la commande -->
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Valider ma commande</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
 </body>
 </html>
