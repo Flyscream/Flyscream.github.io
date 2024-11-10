@@ -1,4 +1,4 @@
-/* Appliquez ces styles à l'image dans votre page */
+
 .image-full-page {
     width: 100%;
     height: auto;
@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-/* Styles pour aligner le contenu */
+
 body, html {
     margin: 0;
     padding: 0;
